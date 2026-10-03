@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Abdi Gebisa Nagasa — personal research website">
+<title>Abdi Gebisa Nagasa | Research</title>
+<style>
+:root{
+  --bg:#f8f8f6;--paper:#fff;--text:#20252b;--muted:#68717a;
+  --line:#e1e3e5;--accent:#315d78;--soft:#eef3f5;--max:1040px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);
+font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{width:min(calc(100% - 34px),var(--max));margin:auto}
+header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);
+position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
+.nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{font:700 19px Georgia,"Times New Roman",serif;color:var(--text)}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{font-size:14px;color:var(--muted)}
+.hero{padding:82px 0 70px;background:var(--paper);border-bottom:1px solid var(--line)}
+.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.13em;color:var(--accent);font-weight:700}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1.2}
+h1{font-size:clamp(40px,7vw,66px);margin:14px 0 20px;max-width:800px}
+.intro{max-width:730px;color:#56616b;font-size:18px;margin:0 0 25px}
+.tags{display:flex;gap:7px;flex-wrap:wrap}
+.tag{border:1px solid var(--line);border-radius:30px;padding:5px 10px;background:#fff;color:#5e6871;font-size:12px}
+section{padding:68px 0;border-bottom:1px solid var(--line)}
+.section-top{display:grid;grid-template-columns:190px 1fr;gap:45px;margin-bottom:30px}
+.label{font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:var(--accent);font-weight:700}
+.section-top h2{font-size:34px;margin:0 0 9px}
+.section-top p{color:var(--muted);margin:0;max-width:700px}
+.projects{display:grid;gap:17px}
+.project{background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:25px}
+.project-head{display:flex;justify-content:space-between;gap:15px;align-items:flex-start}
+.project h3{font-size:24px;margin:0 0 12px}
+.status{white-space:nowrap;font-size:10px;font-weight:700;letter-spacing:.06em;
+color:var(--accent);background:var(--soft);border:1px solid #d5e0e5;border-radius:20px;padding:5px 9px}
+.project p{color:var(--muted);margin:0 0 17px}
+.project-links{display:flex;gap:15px;flex-wrap:wrap;font-size:13px;font-weight:600}
+.ack{margin-top:21px;padding:15px 17px;border-top:1px solid var(--line);color:#626c75;font-size:13px}
+.ack strong{color:#343b42}
+.archive{display:grid;gap:10px}
+.file{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 18px;
+display:flex;align-items:center;justify-content:space-between;gap:18px}
+.file-name{font-weight:650;font-size:14px}.file-meta{font-size:12px;color:var(--muted)}
+.open{border:1px solid #ccd4d9;border-radius:6px;padding:7px 11px;font-size:12px;white-space:nowrap}
+.path{display:grid;grid-template-columns:repeat(5,1fr);background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.step{padding:20px 16px;border-right:1px solid var(--line)}.step:last-child{border:0}
+.step small{color:var(--accent);font-weight:700}.step h3{font-size:18px;margin:20px 0 7px}.step p{font-size:12px;color:var(--muted);margin:0}
+.personal{display:grid;grid-template-columns:1fr 1.25fr;gap:60px}
+.personal h2{font-size:34px;margin:0}
+.personal p{color:var(--muted)}
+.quote{margin-top:25px;padding:19px 20px;border-left:3px solid var(--accent);background:#fff;color:#505a63;font-family:Georgia,serif}
+.contact{background:#202a31;color:#fff;border-radius:9px;padding:30px}
+.contact h2{margin:0 0 8px;font:500 30px Georgia,serif}.contact p{color:#c9d0d4}
+.contact-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.contact-links a{color:#fff;border:1px solid #59656d;border-radius:6px;padding:8px 12px;font-size:13px}
+footer{padding:28px 0 40px;color:#7a8289;font-size:12px}
+@media(max-width:800px){
+ .section-top,.personal{grid-template-columns:1fr;gap:12px}
+ .path{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}
+}
+@media(max-width:600px){
+ .wrap{width:min(calc(100% - 26px),var(--max))}
+ .nav{padding:13px 0;align-items:flex-start;flex-direction:column}
+ nav{gap:11px}.hero{padding:60px 0 52px}section{padding:52px 0}
+ .project-head,.file{align-items:flex-start;flex-direction:column}.open{width:100%;text-align:center}
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">Abdi Gebisa Nagasa</a>
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#archive">Archive</a>
+      <a href="#direction">Direction</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">My research space · Ethiopia</div>
+    <h1>Learning physics by asking better questions.</h1>
+    <p class="intro">
+      I am Abdi Gebisa Nagasa, a Grade 12 STEM student interested in physics,
+      computation, and the questions that connect them. This is where I keep
+      my research ideas, projects, documents, and the things I am still learning.
+    </p>
+    <div class="tags">
+      <span class="tag">Nuclear Physics</span>
+      <span class="tag">Quantum Mechanics</span>
+      <span class="tag">Computational Physics</span>
+      <span class="tag">Quantum Information</span>
+      <span class="tag">Quantum Computing</span>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+<div class="wrap">
+  <div class="section-top">
+    <div class="label">01 · Research</div>
+    <div>
+      <h2>What I am working on</h2>
+      <p>
+        These are not presented as finished discoveries. They are projects at different
+        stages of learning, development, simulation, and experimental planning.
+      </p>
+    </div>
+  </div>
+
+  <div class="projects">
+
+    <article class="project">
+      <div class="project-head">
+        <h3>Time-Reversal Violation in Radiative Nuclear Beta Decay</h3>
+        <span class="status">DEVELOPING</span>
+      </div>
+      <p>
+        My current nuclear-physics research idea explores a T-odd momentum correlation
+        involving the beta particle, photon, and recoil system. A major part of the work
+        is understanding final-state interactions, detector effects, and other systematic
+        effects before interpreting a possible asymmetry.
+      </p>
+      <div class="project-links">
+        <a href="trv-proposal.pdf">Read the proposal →</a>
+      </div>
+      <div class="ack">
+        <strong>Acknowledgment:</strong>
+        I am grateful to <strong>[Add mentor/researcher name here]</strong>
+        for guidance, discussion, or feedback that has helped me develop this project.
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>Experimental Investigation of Quantum Polarization and Malus' Law</h3>
+        <span class="status">PLANNING</span>
+      </div>
+      <p>
+        This project is my practical entry into experimental quantum mechanics.
+        I plan to investigate polarization and Malus' law quantitatively, record data,
+        analyze uncertainty, and use the experience as a foundation for more advanced
+        low-light and quantum-information experiments.
+      </p>
+      <div class="project-links">
+        <a href="quantum-polarization.pdf">Read the project →</a>
+      </div>
+      <div class="ack">
+        <strong>Acknowledgment:</strong>
+        I am grateful to <strong>[Add mentor/researcher name here]</strong>
+        for support, advice, or scientific feedback related to this project.
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-head">
+        <h3>Relativistic Time Dilation in Low-Momentum Muon Decay</h3>
+        <span class="status">TEAM PROJECT</span>
+      </div>
+      <p>
+        I served as the theoretical physics lead for our school team in CERN's
+        Beamline for Schools competition. Our proposal studied the precision boundary
+        of relativistic time-dilation measurements in low-momentum muon decay.
+      </p>
+      <div class="project-links">
+        <a href="bl4s-muon-proposal.pdf">Read the proposal →</a>
+      </div>
+      <div class="ack">
+        <strong>Acknowledgment:</strong>
+        I am grateful to <strong>[Add mentor/researcher name here]</strong>
+        for guidance and encouragement connected with this project.
+      </div>
+    </article>
+
+  </div>
+</div>
+</section>
+
+<section id="archive">
+<div class="wrap">
+  <div class="section-top">
+    <div class="label">02 · Archive</div>
+    <div>
+      <h2>My research documents</h2>
+      <p>These files are available for reading. The source website itself is maintained by me.</p>
+    </div>
+  </div>
+
+  <div class="archive">
+    <div class="file"><div><div class="file-name">trv-proposal.pdf</div><div class="file-meta">Time-Reversal Violation · Nuclear physics</div></div><a class="open" href="trv-proposal.pdf">Open</a></div>
+    <div class="file"><div><div class="file-name">quantum-polarization.pdf</div><div class="file-meta">Quantum polarization · Experimental project</div></div><a class="open" href="quantum-polarization.pdf">Open</a></div>
+    <div class="file"><div><div class="file-name">bl4s-muon-proposal.pdf</div><div class="file-meta">CERN BL4S · Muon decay</div></div><a class="open" href="bl4s-muon-proposal.pdf">Open</a></div>
+  </div>
+</div>
+</section>
+
+<section id="direction">
+<div class="wrap">
+  <div class="section-top">
+    <div class="label">03 · Direction</div>
+    <div>
+      <h2>Where I want to grow</h2>
+      <p>This is the direction I am building toward, step by step.</p>
+    </div>
+  </div>
+
+  <div class="path">
+    <div class="step"><small>01</small><h3>Nuclear Physics</h3><p>Symmetries and precision measurements.</p></div>
+    <div class="step"><small>02</small><h3>Quantum Mechanics</h3><p>Foundations, measurement and experiments.</p></div>
+    <div class="step"><small>03</small><h3>Computation</h3><p>Simulation, numerical analysis and data.</p></div>
+    <div class="step"><small>04</small><h3>Quantum Information</h3><p>States, correlations and information.</p></div>
+    <div class="step"><small>05</small><h3>Quantum Computing</h3><p>Algorithms and physical implementations.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap personal">
+  <div>
+    <div class="label">04 · About me</div>
+    <h2>A student building a research path one project at a time.</h2>
+  </div>
+  <div>
+    <p>
+      I study at Ambo University Special Secondary School in Ethiopia. My interests
+      have grown from physics questions that I encountered at school and through
+      independent study into a wider interest in nuclear physics, quantum mechanics,
+      computation, and quantum information.
+    </p>
+    <p>
+      I do not want this website to look like a collection of claims. I want it to
+      show the actual process: what I am asking, what I have learned, what I have
+      tried, what I still do not understand, and where I want to go next.
+    </p>
+    <div class="quote">
+      “I am still learning, but I want to learn by doing real scientific work.”
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap">
+  <div class="contact">
+    <h2>Let's talk about physics.</h2>
+    <p>
+      If you are a researcher, teacher, mentor, or student interested in discussing
+      one of these projects, I would be glad to hear from you.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:abdigebisa035@gmail.com">Email</a>
+      <a href="https://github.com/Abdi-Gebisa" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+  © 2026 Abdi Gebisa Nagasa · Personal research website
+</div>
+</footer>
+</body>
+</html>
