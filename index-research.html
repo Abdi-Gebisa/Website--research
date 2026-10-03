@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Abdi Gebisa Nagasa — Research website">
+<title>Abdi Gebisa Nagasa — Research</title>
+<style>
+:root{--bg:#f7f8fa;--white:#fff;--text:#18202a;--muted:#66717d;--line:#dfe4e9;--accent:#174a7c;--soft:#eef4f9;--max:1080px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{width:min(calc(100% - 36px),var(--max));margin:auto}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand,h1,h2,h3{font-family:Georgia,"Times New Roman",serif}
+.brand{font-size:19px;font-weight:700;color:var(--text)}
+nav{display:flex;gap:20px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px}
+.hero{padding:92px 0 74px;background:var(--white);border-bottom:1px solid var(--line)}
+.eyebrow,.label{color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:700}
+.eyebrow{margin-bottom:16px}h1{font-size:clamp(38px,7vw,68px);font-weight:500;line-height:1.15;max-width:850px;margin:0 0 22px}
+.lead{max-width:760px;font-size:18px;color:#4e5965;margin:0 0 28px}
+.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{border:1px solid var(--line);background:#fff;padding:7px 11px;border-radius:999px;font-size:12px;color:#56616d}
+section{padding:76px 0;border-bottom:1px solid var(--line)}
+.section-head{display:grid;grid-template-columns:240px 1fr;gap:48px;margin-bottom:36px}
+.section-head h2,.about h2{font-size:36px;font-weight:500;line-height:1.15;margin:0 0 12px}
+.section-head p,.about p{color:var(--muted)}
+.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);padding:25px;border-radius:10px}
+.status{display:inline-block;border:1px solid #cbd8e4;background:var(--soft);color:var(--accent);border-radius:999px;padding:4px 9px;font-size:11px;font-weight:700;margin-bottom:18px}
+.card h3{font-size:23px;font-weight:500;line-height:1.25;margin:0 0 13px}.card p{color:var(--muted);font-size:14px;margin:0 0 20px}
+.links{display:flex;gap:12px;flex-wrap:wrap;font-size:13px}.links a{font-weight:600}
+.archive{display:grid;gap:12px}.file{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:19px 21px;background:#fff;border:1px solid var(--line);border-radius:9px}
+.file-name{font-weight:700}.file-meta{color:var(--muted);font-size:13px}.file-button{border:1px solid #cbd4dc;padding:8px 13px;border-radius:7px;font-size:13px;font-weight:600;background:#fff}
+.direction{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);background:#fff;border-radius:10px;overflow:hidden}
+.step{padding:23px 18px;border-right:1px solid var(--line)}.step:last-child{border:0}.number{color:var(--accent);font-size:12px;font-weight:700;margin-bottom:25px}
+.step h3{font-size:19px;margin:0 0 8px;font-weight:500}.step p{color:var(--muted);font-size:13px;margin:0}
+.note{margin-top:20px;background:#fff;border-left:3px solid var(--accent);border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 24px;color:#4e5965;border-radius:0 8px 8px 0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:55px}
+.contact-box{background:#17212b;color:#fff;border-radius:10px;padding:32px}.contact-box h2{color:#fff;font:500 31px Georgia,serif;margin:0 0 12px}.contact-box p{color:#c7d0d8}
+.contact-links{display:flex;gap:15px;flex-wrap:wrap;margin-top:22px}.contact-links a{color:#fff;border:1px solid #53616d;border-radius:7px;padding:9px 13px;font-size:13px}
+footer{padding:28px 0 45px;color:#7a848e;font-size:13px}
+@media(max-width:850px){.research-grid{grid-template-columns:1fr}.section-head,.about{grid-template-columns:1fr;gap:12px}.direction{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}}
+@media(max-width:620px){.wrap{width:min(calc(100% - 26px),var(--max))}.nav{padding:14px 0;align-items:flex-start;flex-direction:column}.hero{padding:62px 0 52px}section{padding:54px 0}.file{align-items:flex-start;flex-direction:column}.file-button{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#top">Abdi Gebisa Nagasa</a>
+<nav><a href="#research">Research</a><a href="#archive">Archive</a><a href="#direction">Direction</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+<div class="eyebrow">Independent student researcher · Ethiopia</div>
+<h1>Questions first.<br>Evidence next.</h1>
+<p class="lead">A research-focused website documenting my developing work in nuclear physics, quantum mechanics, computational physics, and quantum information.</p>
+<div class="tags"><span class="tag">Nuclear Physics</span><span class="tag">Quantum Mechanics</span><span class="tag">Computational Physics</span><span class="tag">Quantum Information</span><span class="tag">Quantum Computing</span></div>
+</div></section>
+
+<section id="research"><div class="wrap">
+<div class="section-head"><div class="label">01 · Research</div><div><h2>Current questions and projects</h2><p>These projects represent different stages of my development. I distinguish between an idea, a simulation, an experimental measurement, and an established result.</p></div></div>
+<div class="research-grid">
+
+<article class="card"><span class="status">DEVELOPING</span><h3>Time-Reversal Violation in Radiative Nuclear Beta Decay</h3><p>An experimental concept using a T-odd momentum correlation among the beta particle, photon, and recoil system, with attention to electromagnetic final-state interactions and detector/systematic effects.</p><div class="links"><a href="trv-proposal.pdf">Read proposal →</a></div></article>
+
+<article class="card"><span class="status">PLANNING</span><h3>Experimental Investigation of Quantum Polarization and Malus' Law</h3><p>A quantitative experimental project on polarization, Malus' law, uncertainty analysis, and a possible progression toward low-light/single-photon and quantum-information experiments.</p><div class="links"><a href="quantum-polarization.pdf">Read project →</a></div></article>
+
+<article class="card"><span class="status">TEAM PROJECT</span><h3>Relativistic Time Dilation in Low-Momentum Muon Decay</h3><p>CERN Beamline for Schools team proposal investigating the precision boundary of relativistic time-dilation measurements for low-momentum muons using experimental and computational approaches.</p><div class="links"><a href="bl4s-muon-proposal.pdf">Read proposal →</a></div></article>
+
+</div></div></section>
+
+<section id="archive"><div class="wrap">
+<div class="section-head"><div class="label">02 · Research Archive</div><div><h2>Documents</h2><p>All research documents currently stored in this GitHub repository.</p></div></div>
+<div class="archive">
+
+<div class="file"><div><div class="file-name">trv-proposal.pdf</div><div class="file-meta">Time-Reversal Violation · Nuclear beta decay</div></div><a class="file-button" href="trv-proposal.pdf">Open PDF</a></div>
+<div class="file"><div><div class="file-name">quantum-polarization.pdf</div><div class="file-meta">Experimental quantum mechanics · Malus' law</div></div><a class="file-button" href="quantum-polarization.pdf">Open PDF</a></div>
+<div class="file"><div><div class="file-name">bl4s-muon-proposal.pdf</div><div class="file-meta">CERN BL4S · Low-momentum muon decay</div></div><a class="file-button" href="bl4s-muon-proposal.pdf">Open PDF</a></div>
+<div class="file"><div><div class="file-name">index.html</div><div class="file-meta">This website · Editable source</div></div><a class="file-button" href="index.html">Open HTML</a></div>
+
+</div></div></section>
+
+<section id="direction"><div class="wrap">
+<div class="section-head"><div class="label">03 · Direction</div><div><h2>Research development</h2><p>A long-term learning path connecting my current work with the areas I want to explore next.</p></div></div>
+<div class="direction">
+<div class="step"><div class="number">01</div><h3>Nuclear Physics</h3><p>Symmetries, beta decay, precision measurements.</p></div>
+<div class="step"><div class="number">02</div><h3>Quantum Mechanics</h3><p>Foundations, measurement, polarization and experimental tests.</p></div>
+<div class="step"><div class="number">03</div><h3>Computation</h3><p>Simulation, numerical analysis, uncertainty and reproducible workflows.</p></div>
+<div class="step"><div class="number">04</div><h3>Quantum Information</h3><p>Quantum states, correlations and information-processing concepts.</p></div>
+<div class="step"><div class="number">05</div><h3>Quantum Computing</h3><p>Long-term exploration of quantum algorithms and physical implementations.</p></div>
+</div>
+<div class="note"><strong>Research principle:</strong> I want this site to show the development of the work honestly—what is proposed, what is simulated, what is measured, what is supported by evidence, and what remains uncertain.</div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+<div><div class="label">04 · About</div><h2>A record of scientific work in progress.</h2></div>
+<div><p>I am a Grade 12 STEM student at Ambo University Special Secondary School in Ethiopia, developing interests in theoretical and experimental physics alongside computational methods.</p><p>My research interests currently connect nuclear physics, quantum mechanics, computational physics, quantum information, and eventually quantum computing.</p><p>This website is intentionally separate from my general personal portfolio. It is designed as a research archive: questions, proposals, documents, methods, project development, and future directions.</p></div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact-box">
+<h2>Research contact</h2><p>For research discussion, mentorship, collaboration, or feedback on the projects documented here, you can contact me directly.</p>
+<div class="contact-links"><a href="mailto:abdigebisa035@gmail.com">Email</a><a href="https://github.com/Abdi-Gebisa" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></div>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Abdi Gebisa Nagasa · Research website · Edit this site directly in GitHub.</div></footer>
+</body>
+</html>
